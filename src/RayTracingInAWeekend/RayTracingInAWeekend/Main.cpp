@@ -26,7 +26,10 @@ color ray_color(const ray& r) {
 int main() {
 	// Image
 	const auto aspect_ratio = 16.0 / 9.0;
-	const int image_width = 256;
+	// correct aspect ratios would be:
+	// 455 x 256 (runs longer)
+	// 256 x 144 (runs quicker but smaller image)
+	const int image_width = 455;
 	const int image_height = 256;
 
 	// Camera
